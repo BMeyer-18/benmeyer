@@ -29,7 +29,7 @@ const addSection = (row, heading, text, link, imgLink) => {
 }
 
 const test = document.getElementById("test");
-fetch('./info.json').then(response => JSON.parse(response)).catch(error => test.innerHTML = error);
+//fetch('./info.json').then(response => JSON.parse(response)).catch(error => test.innerHTML = error);
 test.innerHTML = "aaa";
 
 infoObj = JSON.parse(INFO);
