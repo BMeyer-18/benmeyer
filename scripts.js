@@ -1,4 +1,4 @@
-import INFO from "./info.json";
+//import INFO from "./info.json";
 //const INFO = '{ "headings": [ "What am I?", "How am I?", "Why am I?" ],' +
 //    '"bodies": [ "I am a software engineer in training.", "Pretty good, thanks", "Im not sure" ] }';
 
@@ -29,7 +29,7 @@ const addSection = (row, heading, text, link, imgLink) => {
 }
 
 const test = document.getElementById("test");
-//fetch('./info.json').then(response => JSON.parse(response)).catch(error => test.innerHTML = error);
+fetch('./info.json').then(response => JSON.parse(response)).catch(error => test.innerHTML = error);
 test.innerHTML = "aaa";
 
 infoObj = JSON.parse(INFO);
