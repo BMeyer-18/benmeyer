@@ -1,6 +1,6 @@
-//import INFO from "./info.json";
-const INFO = '{ "headings": [ "What am I?", "How am I?", "Why am I?" ],' +
-    '"bodies": [ "I am a software engineer in training.", "Pretty good, thanks", "Im not sure" ] }';
+import INFO from "./info.json";
+//const INFO = '{ "headings": [ "What am I?", "How am I?", "Why am I?" ],' +
+//    '"bodies": [ "I am a software engineer in training.", "Pretty good, thanks", "Im not sure" ] }';
 
 const addSection = (row, heading, text, link, imgLink) => {
     const gridContainer = document.getElementById("summary");
