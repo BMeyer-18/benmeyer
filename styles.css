@@ -1,0 +1,65 @@
+/* Place your CSS styles in this file */
+
+body {
+    background-color: royalblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+    height: 50px;
+    /*position: fixed;*/
+}
+
+header {
+    background-color: navy;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#name {
+    color: aqua;
+    text-align: center;
+}
+
+@media(width < 2320px) {
+    #name { font-size: 4vw }
+}
+
+@media(width >= 2320px) {
+    #name { font-size: 90px }
+}
+
+/*@media(min-width:811px) {*/
+@media (width > 1000px) {
+    #portrait { height: 100% }
+    header { height: 65.5vh }
+}
+
+/*@media(max-width:811px) {*/
+@media (width <= 1000px) {
+    #portrait { width: 50% }
+    header { height: 65.5vw }
+}
+
+h1 {
+    text-align: center;
+}
+
+.textbox {
+    border: solid 5px black;
+    margin: 30px 15% 30px 15%;
+    width: 70%;
+    background-color: blue;
+    text-align: center;
+    text-justify: inter-word;
+    color: white;
+}
+
+#summary {
+    display: grid;
+    grid-template: repeat(3, 250px) / 10% 50% 10% 20% 10%;
+}
